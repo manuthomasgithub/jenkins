@@ -5,19 +5,17 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "building" >> /var/www/html/index.html
+                 writeFile file: "/var/www/html/index.html", text: "This file is useful, need to archive it."
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                echo "Testing.." >> /var/www/html/index.html
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo "Deploying...." >> /var/www/html/index.html
             }
         }
     }
