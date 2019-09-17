@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-pipeline {
+//pipeline {
 
 
     stages {
@@ -17,4 +17,4 @@ pipeline {
             }
         }
     }
-}
+//}
